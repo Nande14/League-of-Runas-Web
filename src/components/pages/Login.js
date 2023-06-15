@@ -1,40 +1,48 @@
 import React, { useState } from 'react';
 import './Login.module.css';
 
-function Login() {
-  const [username, setUsername] = useState('');
+const Login = () => {
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Lógica de autenticação aqui
-    console.log('Usuário:', username);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+  
+    console.log('Email:', email);
     console.log('Senha:', password);
+
+    
+    setEmail('');
+    setPassword('');
   };
 
   return (
     <div className="login-container">
-      <h1>Login</h1>
-      <div className="form-group">
-        <label htmlFor="username">Usuário:</label>
-        <input
-          type="text"
-          id="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </div>
-      <div className="form-group">
-        <label htmlFor="password">Senha:</label>
-        <input
-          type="password"
-          id="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button onClick={handleLogin}>Entrar</button>
+      <form onSubmit={handleSubmit}>
+        <h2>Login</h2>
+        <div className="form-group">
+          <label>Email:</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-group">
+          <label>Senha:</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <button type="submit">Entrar</button>
+      </form>
     </div>
   );
-}
+};
 
 export default Login;

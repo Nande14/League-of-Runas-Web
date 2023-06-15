@@ -1,44 +1,45 @@
+
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: white;
+  margin-top: 100px;
 }
 
-h1 {
-  font-size: 2rem;
-  color: yellow;
-  margin-bottom: 1.5rem;
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h2 {
+  text-align: center;
+  color: #e9990e;;
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 label {
-  color: yellow;
-  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #e9990e;;
 }
 
-input[type='text'],
-input[type='password'] {
-  padding: 0.5rem;
-  font-size: 1rem;
+input {
+  padding: 5px;
+  border: 1px solid #e9990e;;
+  border-radius: 4px;
 }
 
 button {
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: yellow;
-  color: white;
+  padding: 10px;
+  background-color: #e9990e;
+  color: #fff;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-}
-
-button:hover {
-  background-color: goldenrod;
 }
