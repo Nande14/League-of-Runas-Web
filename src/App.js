@@ -2,7 +2,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 import Home from './components/pages/Home'
 import Runas from './components/pages/Runas'
 import Feiticos from "./components/pages/Feiticos"
-import Partida from "./components/pages/Partida"
+import Campeoes from "./components/pages/Campeoes"
 import Login from "./components/pages/Login"
 import Adicionar from "./components/pages/Adicionar"
 
@@ -32,8 +32,8 @@ function App() {
               <Feiticos />
               </Route>
 
-              <Route exact path="/partida">
-              <Partida />
+              <Route exact path="/campeoes">
+              <Campeoes />
               </Route>
 
 

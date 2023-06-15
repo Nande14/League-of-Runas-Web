@@ -24,7 +24,7 @@ function Navbar() {
                     </li>
                     
                     <li classname={styles.item}>
-                        <Link to="/Partida">INGAME</Link>
+                        <Link to="/Campeoes">CAMPEÕES</Link>
                     </li>
 
                     <li classname={styles.item}>

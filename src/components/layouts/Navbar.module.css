@@ -12,15 +12,17 @@
     display: flex;
     list-style: none;
     align-items: center;
+    color: #ffc107;
 }
 
 .item{
     margin-right: 1em;
+    color: #ffc107;
 }
 
 .item ul li a {
     color: #ffc107;
-    text-decoration: none;
+    
 }
 a:link{
     color:#ffc107;
